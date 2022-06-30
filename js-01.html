@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+
+    <script>
+        
+      //  let age = prompt('나이를 입력해주세요.', 100);
+
+//alert(`당신의 나이는 ${age}살 입니다.`); // 당신의 나이는 100살입니다.
+
+//let isBoss = confirm('당신이 보스입니까?')
+//console.log(isBoss)
+
+//형 변환 type conversion
+//문자열 String(값)
+//숫자 Number(문자열또는 불린)
+//불린 boolean (문자열 또는 숫자), (0,null,NaN,''')일 경우에만 false
+
+/* 예제 
+let a = 1, b = 1;
+
+let c = ++a; //  a=2 c=2
+let d = b++; // d=1 b=2
+
+
+let a = prompt("덧셈할 첫 번째 숫자를 입력해주세요.", 1);
+let b = prompt("덧셈할 두 번째 숫자를 입력해주세요.", 2);
+
+alert(a + b); // 12
+
+alert(+a + +b); //12
+​
+*/
+
+
+// <index> = 순서 
+
+/* ex
+let email = 'only991221@naver.com';
+let result = email.indexof('L');
+console.log(result)
+=2
+
+
+//<slice>(시작,자를개수)
+
+ex 2)
+let result =email.slice(0.3);
+= onl
+
+//<substring>(시작,끝-1)
+
+ex 3) let result = email.substring(1,3);
+=nl
+
+
+ex 4)
+// replace : 대체하는 것 
+
+let email ="drv98@naver.com";
+
+//replace(a,b) a를 b로 바꾼다
+let result =email.replace('v','b');
+                           -> com, kr
+                           1. =drb
+                           2.com ->kr
+
+*/
+
+
+//   <trim> :빈칸 없애주는 역할
+
+/* "   가나다    ".trim()
+="가나다" 
+
+"  가  나   다" .trim()
+="가 나 다"
+ 
+*/
+
+
+
+//if 조건문
+
+/*  ex 1)
+let  year = prompt('올해는 몇년도 입니까?')
+
+if (yaer == 2022) {
+    alert('정답입니다')
+    alert('smart')
+
+}else {
+    alert('틀림')
+}
+*/
+/* ex 2)
+let  year = prompt('올해는 몇년도 입니까?')
+
+if (yaer == 2022) {
+    alert('정답입니다')
+    alert('smart')
+    
+}else if (year ==2021){
+    alert('작년입니다.!')
+}else if (year ==2023){
+    alert('내년입니다')
+}else{
+    alert('틀림')
+}
+
+ex 3)
+
+let year = prompt('ECMAScript-2015 명세는 몇 년도에 출판되었을까요?', '');
+
+if (year < 2015) {
+  alert( '숫자를 좀 더 올려보세요.' );
+} else if (year > 2015) {
+  alert( '숫자를 좀 더 내려보세요.' );
+} else {
+  alert( '정답입니다!' );
+}
+
+
+//if문은 참일 경우에만 결과값이 나옴
+
+let accessAllowed;
+let age = prompt('나이를 입력해 주세요.', '');
+
+if (age > 18) {
+  accessAllowed = true;
+} else {
+  accessAllowed = false;
+}
+
+let accessAllowed = (age > 18) ? "성인" : "학생";
+
+alert(accessAllowed);
+
+// 🚀 최종 예제 🚀
+
+1. 1에서 100까지 콘솔에 출력합니다.
+
+2. 이때 3의 배수이면 숫자 대신에 '삼삼'을 출력하고
+
+3. 5의 배수이면 '오오'를 출력합니다.
+
+4. 단, 3과 5의 공통 배수이면(예: 15) '삼삼오오'를 출력합니다.
+
+=>
+for(let i=1; i=100; i ++){
+
+if(i%3==0) console.log('삼삼');
+    else console.log(i)
+    if(i%5==0) console.log('오오');
+    else console.log(i)
+    
+    else if (i%3==0,i%5==0){
+        
+    }
+
+
+
+</script>
+</body>
+</html>
